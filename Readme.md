@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Павел Филинских](https://up.htmlacademy.ru/htmlcss/13/user/19082).
-* Наставник: `Неизвестно`.
+* Наставник: [Владимир Меркулов] (https://htmlacademy.ru/profile/straniks).
 
 ---
 
