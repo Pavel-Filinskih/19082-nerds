@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+
+    <div class="wrapper-main">
+
+		<header class="header-main">
+			<a href="#"><img src="http://placehold.it/139x56" alt="" /></a>
+
+			<nav class="header-main-menu">
+				<ul>
+					<li><a href="#">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+
+			<div class="header-main-basket">
+				<img src="http://placehold.it/16x16" alt="" />
+				<a href="#">Корзина</a>
+			</div>
+		</header>
+		
+		<h1>Добро пожаловать в магазин<br>готовых макетов</h1>
+		
+		<div class="wrapper-forms">
+		
+			<div> <!-- по макету должен быть фильтр выбора стоимости с ползунком -->
+				<label>СТОИМОСТЬ:</label><br>
+				<label>oт <input type="text" value="0"></label>
+				<label>до <input type="text" value="15000"></label>
+			</div>
+
+			<form action="action.php">
+				<label>СЕТКА:</label><br>
+					<input type="radio" checked ><label>Адаптивная</label><br>
+					<input type="radio"><label>Фиксированная</label><br>
+					<input type="radio"><label>Резиновая</label>
+			</form>
+
+			<form action="action.php">
+				<label>ОСОБЕННОСТИ:</label><br>
+					<input type="checkbox" checked ><label>Слайдер</label><br>
+					<input type="checkbox"><label>Блок преимуществ</label><br>
+					<input type="checkbox" checked ><label>Новости</label><br>
+					<input type="checkbox"><label>Галерея</label><br>
+					<input type="checkbox"><label>Корзина</label><br>
+			</form>
+
+			<input type="submit" value="Показать">
+		</div>
+		
+		<div class="shop-catalog">	<!-- каталог шаблонов -->
+			<div class="filter-catalog">
+				СОРТИРОВАТЬ: <!-- фильтр: по цене, типу, функционалу. Как его сделать без скриптов и стилей ? -->
+			</div>
+			
+			<div class="pictures-catalog">
+				<img src="http://placehold.it/241x252" alt="" />
+				<img src="http://placehold.it/241x252" alt="" />
+				<img src="http://placehold.it/241x252" alt="" />
+				<img src="http://placehold.it/241x252" alt="" />
+				<img src="http://placehold.it/241x252" alt="" />
+				<img src="http://placehold.it/241x252" alt="" />
+			</div>
+		</div>
+		
+		<ul class="pagination">
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">СЛЕДУЮЩАЯ</a></li>
+		</ul>
+
+		<div class="map-widget"> <!-- заглушка виджет карты -->
+			<img src="http://placehold.it/900x400" alt="" />
+		</div>
+
+		<footer>
+			<div class="footer-social-buttons">
+				<img src="http://placehold.it/111x24" alt="" />
+				<img src="http://placehold.it/111x24" alt="" />
+				<img src="http://placehold.it/111x24" alt="" />
+			</div>
+			<p>Давайте дружить, это выгодно!<br><span>Скидка 10% для друзей из социальных сетей.</span></p>
+		</footer>
+		
+	</div>
+
+  </body>
+</html>
