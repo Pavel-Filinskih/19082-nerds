@@ -29,7 +29,7 @@
 			</div>
 		</header>
 		
-		<h1>Добро пожаловать в магазин<br>готовых макетов</h1>
+		<h1>Добро пожаловать в магазин<br>готовых макетов</h1><!-- Регулируем шириной заголовка, br убрать -->
 		
 		<div class="wrapper-forms">
 		
@@ -39,6 +39,7 @@
 				<label>до <input type="text" value="15000"></label>
 			</div>
 
+      <!-- Твой варинат
 			<form action="action.php">
 				<label>СЕТКА:</label><br>
 					<input type="radio" checked ><label>Адаптивная</label><br>
@@ -55,7 +56,22 @@
 					<input type="checkbox"><label>Корзина</label><br>
 			</form>
 
+			<input type="submit" value="Показать">-->
+			<!--  А надо так -->
+			<form action="#" method="post">
+				<label>СЕТКА:</label>
+					<input type="radio" checked ><label>Адаптивная</label>
+					<input type="radio"><label>Фиксированная</label>
+					<input type="radio"><label>Резиновая</label>
+	
+				<label>ОСОБЕННОСТИ:</label><br>
+					<input type="checkbox" checked ><label>Слайдер</label>
+					<input type="checkbox"><label>Блок преимуществ</label>
+					<input type="checkbox" checked ><label>Новости</label>
+					<input type="checkbox"><label>Галерея</label>
+					<input type="checkbox"><label>Корзина</label>
 			<input type="submit" value="Показать">
+			</form>
 		</div>
 		
 		<div class="shop-catalog">	<!-- каталог шаблонов -->
@@ -63,7 +79,7 @@
 				СОРТИРОВАТЬ: <!-- фильтр: по цене, типу, функционалу. Как его сделать без скриптов и стилей ? -->
 			</div>
 			
-			<div class="pictures-catalog">
+			<div class="pictures-catalog"><!-- Каждая картинка должна быть в диве, так как у тебя там есть еще элементы -->
 				<img src="img/photo_aviator.jpg" width="240" height="240" alt="" />	
 				<img src="img/photo_sunset.jpg" width="240" height="240" alt="" />
 				<img src="img/photo_forte.jpg" width="240" height="240" alt="" />
