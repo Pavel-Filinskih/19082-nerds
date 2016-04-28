@@ -3,6 +3,114 @@ body {
 	color:#000;
 	}
 	
+.wrapper-main {
+	outline: 2px solid red;
+	max-width: 900px;
+	min-width: 900px;
+	padding: 0 10px;
+	margin: 0 auto;
+	overflow: hidden;
+	}
+	
+.header-main {
+	outline: 2px solid green;
+	overflow: hidden;
+	margin-bottom: 10px;
+	}
+
+.header-main a{
+	float: left;
+	}
+	
+.header-main-menu {
+	width: 440px;
+	float: left;
+	}
+
+.header-main-menu ul li {
+	float: left;
+	margin-left: 30px;
+	list-style: none
+	}
+
+.header-main-basket {
+	width: 100px;
+	float: right;
+	}
+	
+.wrapper-slider {
+	outline: 2px solid green;
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 10px;
+	}
+
+.wrapper-slider .info-slider {
+	width: 400px;
+	float: left;
+	}
+
+.wrapper-slider img{
+	float: right;
+	}
+	
+.wrapper-services {
+	outline: 2px solid green;
+	overflow: hidden;
+	margin-bottom: 10px;
+	}
+
+.wrapper-services .order-services {
+	width: 240px;
+	float: left;
+	margin-left: 45px;
+	}
+
+.wrapper-info-studio {
+	outline: 2px solid green;
+	overflow: hidden;
+	margin-bottom: 10px;
+	}
+	
+.wrapper-info-studio .info-tech {
+	width: 600px;
+	float: left;
+	}
+	
+.wrapper-info-studio .info-work {
+	width: 250px;
+	float: right;
+	}
+	
+.pictures-brands {
+	outline: 2px solid green;
+	overflow: hidden;
+	margin-bottom: 10px;
+	}
+	
+.pictures-brands img{
+	margin-left: 60px;
+	}
+	
+.map-widget {
+	outline: 2px solid green;
+	margin-bottom: 10px;
+	}
+
+footer {
+	outline: 2px solid green;
+	overflow: hidden;
+	}
+	
+footer .footer-social-buttons {
+	float: left;
+	margin-top: 25px;
+	}
+		
+footer p {
+	float: right;
+	}
+
 h1 {
 	font-size: 36px;
 	line-height: 36px;
@@ -15,3 +123,48 @@ h2 {
 	font-weight: 500;
 	text-transform: uppercase;
    }
+
+/* Стили страницы каталога */
+   
+.wrapper-forms {
+	outline: 2px solid green;
+	width: 240px;
+	float: left;
+	margin-bottom: 10px;
+	}
+
+.wrapper-forms div { margin-bottom: 54px;}
+.wrapper-forms form ul { padding: 0;}
+.wrapper-forms form ul li { list-style: none;}
+	
+.shop-catalog {
+	outline: 2px solid green;
+	width: 580px;
+	float: right;
+	margin-bottom: 10px;
+	}
+	
+.shop-catalog .filter-catalog {
+	margin-bottom: 40px;
+	}
+	
+.pictures-catalog .wrap-pict-catalog {
+	float: left;
+	margin: 0 20px 80px 20px;
+	}
+
+.pictures-catalog .info-price { display: none;}
+	
+ul.pagination {
+	outline: 2px solid green;
+	width: 300px;
+	margin: 0 auto 10px;
+	clear: both;
+	overflow: hidden;
+	}
+	
+ul.pagination li {
+	float: left;
+	list-style: none;
+	margin-left: 10px;
+}
