@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-	
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 
   </head>
   <body>
 
-    <div class="wrapper-main">
-
+    
+<div class="background-wrapper">
+	<div class="wrapper-main">
 		<header class="header-main">
-			<a href="#"><img src="http://placehold.it/139x56" alt="" /></a>
+			<a href="#"><img src="img/logo.png" width="139" height="56" alt="Барбершоп" /></a>
 
 			<nav class="header-main-menu">
 				<ul>
@@ -24,7 +25,7 @@
 			</nav>
 
 			<div class="header-main-basket">
-				<img src="http://placehold.it/16x16" alt="" />
+				<img src="img/icon-basket.png" width="15" height="15" alt="Корзина" />
 				<a href="#">Корзина</a>
 			</div>
 		</header>
@@ -37,7 +38,10 @@
 			</div>
 			<img src="img/slider.png" width="338" height="231" alt="" /> <!-- заглушка вместо слайдера -->
 		</div>
-		
+	</div>
+</div>
+
+	<div class="wrapper-main">
 		<div class="wrapper-services">
 			<div class="order-services">
 				<img src="img/services_1.gif" width="240" height="124" alt="" />
@@ -67,7 +71,7 @@
 			
 				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
 				
-				<p>Выполняем заказы на разработку:</p>
+				<p>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
 
 				<ul>
 					<li>Веб-сайтов любой сложности</li>
@@ -77,9 +81,10 @@
 			</div>
 
 			<div class="info-work">
-				<img src="http://placehold.it/187x75" alt="" />
+				<img src="img/logo.png" width="139" height="56" alt="Барбершоп" />
+				<img src="img/since2004.png" width="240" height="12" alt="since2004" />
 
-				<p>КАК Мы работаем:</p>
+				<p>КАК МЫ РАБОТАЕМ:</p>
 
 				<ul>
 					<li>С самоотдачей 146%</li>
@@ -95,15 +100,48 @@
 			<img src="img/brands_3.png" width="200" height="70" alt="" />
 		</div>
 		
-		<div class="map-widget"> <!-- заглушка виджет карты -->
-			<img src="http://placehold.it/900x800" alt="" />
+		<div class="map-widget">
+			<img src="img/map.jpg" width="900" height="415" alt="Карта проезда" />
+			<img src="img/logo_map.png" width="231" height="190" alt="Барбершоп" />
+
+				<div class="map-info">
+					<h2>NЁRDS DESIGN STUDIO</h2>
+
+						<p>191186, Санкт-Петербург,<br>
+							ул. Б. Конюшенная, д. 19/8<br>
+							<br>
+							тел. +7 (812) 275-75-75
+						</p>
+
+					<a href="#">НАПИШИТЕ НАМ</a>
+				</div>
+				
+				<div class="popup-contact">
+
+					<div class="single-field">
+						  <label for="Name">Ваше имя:</label>
+						  <input name="Name" type="text"></input>
+					</div>
+					 <div class="single-field">
+						  <label for="Email">Ваш e-mail:</label>
+						  <input name="Email" type="text"></input>
+					 </div>
+					<div class="single-field">
+						  <label for="Name">Текст письма:</label>
+						  <textarea name="Name" placeholder="В свободной форме"></textarea>
+					</div>
+					
+					<input type="button" value="ОТПРАВИТЬ">
+
+				</div>
+				
 		</div>
 
 		<footer>
 			<div class="footer-social-buttons">
-				<img src="http://placehold.it/111x24" alt="" />
-				<img src="http://placehold.it/111x24" alt="" />
-				<img src="http://placehold.it/111x24" alt="" />
+				<img src="img/icon-vk.png" width="62" height="63" alt="Вконтакте" />
+				<img src="img/icon-facebook.png" width="62" height="63" alt="Facebook" />
+				<img src="img/icon-instagramm.png" width="62" height="63" alt="Instagramm" />
 			</div>
 			<p>Давайте дружить, это выгодно!<br><span>Скидка 10% для друзей из социальных сетей.</span></p>
 		</footer>
