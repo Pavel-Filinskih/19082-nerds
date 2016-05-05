@@ -48,6 +48,14 @@ h2 {
 	color: #636363;
 	text-decoration: none;
 }
+
+.header-main a:hover{
+	color: #f8888b;
+}
+
+.header-main a:active{
+	color: #ababab;
+}
 	
 .header-main-menu {
 	width: 440px;
@@ -103,6 +111,16 @@ h2 {
 	color: #fff;
 }
 
+.info-slider a:hover {
+	background-color: #d6494d;
+	color: #f4d9d9;
+}
+
+.info-slider a:active {
+	background-color: #b63538;
+	color: #edd6d6;
+}
+
 .wrapper-slider img{
 	float: right;
 }
@@ -140,6 +158,11 @@ h2 {
 	font-size: 12px;
 	background-color: #fb565a;
 	color: #fff;
+}
+
+.order-services a:hover {
+	background-color: #d6494d;
+	color: #f4d9d9;
 }
 
 .wrapper-info-studio {
@@ -226,6 +249,11 @@ h2 {
 .pictures-brands img {
 	opacity: 0.2;
 }
+
+.pictures-brands img:hover {
+	opacity: 1;
+	cursor: pointer;
+}
 	
 .pictures-brands img[src*="brands_1"]{
 	float: left;
@@ -283,8 +311,16 @@ h2 {
 	color: #fff;
 }
 
+.map-info a:hover {
+	background-color: #d6494d;
+}
+
+.map-info a:active {
+	background-color: #b63538;
+}
+
 .popup-contact {
-	display: block;
+	display: none; /* контактная форма появляется при нажатии на кнопку на карте */
 	width: 463px;
 	height: 310px;
 	padding: 56px 89px 49px 78px;
@@ -317,12 +353,63 @@ footer .footer-social-buttons {
 	margin-top: 13px;
 }
 
-.footer-social-buttons img[src*="icon-facebook"]{
-	margin-left: 30px;
+.footer-social-buttons .vk {
+	display: inline-block;
+	border-radius: 63px;
+	background-color: #e1e1e1;
+	width: 63px;
+	height: 39px;
+	padding-top: 24px;
+	margin-right: 28px;
 }
 
-.footer-social-buttons img[src*="icon-instagramm"]{
-	margin-left: 30px;
+.vk img {
+	margin: 0px auto;
+	display: block;
+}
+
+.vk:hover {
+	background-color: #fb565a;
+	cursor: pointer;
+}
+
+.footer-social-buttons .fb {
+	display: inline-block;
+	border-radius: 63px;
+	background-color: #e1e1e1;
+	width: 63px;
+	height: 43px;
+	padding-top: 20px;
+	margin-right: 28px;
+}
+
+.fb img {
+	margin: 0px auto;
+	display: block;
+}
+
+.fb:hover {
+	background-color: #fb565a;
+	cursor: pointer;
+}
+
+.footer-social-buttons .inst {
+	display: inline-block;
+	border-radius: 63px;
+	background-color: #e1e1e1;
+	width: 63px;
+	height: 42px;
+	padding-top: 21px;
+}
+
+.inst img {
+	margin: 0px auto;
+	display: block;
+}
+
+.inst:hover {
+	background-color: #fb565a;
+	cursor: pointer;
 }
 		
 footer p {
