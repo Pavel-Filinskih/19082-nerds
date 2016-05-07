@@ -30,18 +30,23 @@
 			</div>
 		</header>
 	</div>
+			<h1>Добро пожаловать в <br>магазин готовых макетов</h1>
 </div>
 		
 	<div class="wrapper-main">
-		<h1>Добро пожаловать в магазин готовых макетов</h1>
 		
 		<div class="wrapper-forms">
 		
-			<div> <!-- по макету должен быть фильтр выбора стоимости с ползунком -->
-				<label>СТОИМОСТЬ:</label><br>
-				<label>oт <input type="text" value="0"></label>
-				<label>до <input type="text" value="15000"></label>
+			<div class="range-controls">
+				<div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
+				<div class="toggle min-toggle"></div>
+				<div class="toggle max-toggle"></div>
 			</div>
+
+		   <div class="price-controls">
+			от <input class="min-price" type="text" value="0">
+			до <input class="max-price" type="text" value="15 000">
+		   </div>
 
 			<form action="#" method="post">
 				<label>СЕТКА:</label><br>
@@ -62,9 +67,9 @@
 			</form>
 		</div>
 		
-		<div class="shop-catalog">	<!-- каталог шаблонов -->
+		<div class="shop-catalog">
 			<div class="filter-catalog">
-				СОРТИРОВАТЬ: <!-- фильтр: по цене, типу, функционалу. Как его сделать без скриптов и стилей ? -->
+				<p>СОРТИРОВАТЬ: <span>ПО ЦЕНЕ</span>  <span>ПО ТИПУ</span> <span>ПО ФУНКЦИОНАЛУ</span></p>
 			</div>
 			
 			<div class="pictures-catalog">
@@ -73,9 +78,10 @@
 					<img src="img/photo_aviator.jpg" width="240" height="240" alt="" />
 					
 					<div class="info-price">
-						<span>название шаблона</span>
-						<p>описание</p>
-						<a href="#">цена</a>
+						<span>AVIATOR</span>
+						<p>Одностраничный макет
+						с авторским дизайном</p>
+						<a href="#">8000 Р.</a>
 					</div>
 				</div>
 
@@ -83,9 +89,10 @@
 					<img src="img/photo_sunset.jpg" width="240" height="240" alt="" />
 
 					<div class="info-price">
-						<span>название шаблона</span>
-						<p>описание</p>
-						<a href="#">цена</a>
+						<span>Sunset</span>
+						<p>Интернет-магазин
+						 с личным кабинетом</p>
+						<a href="#">10000 Р.</a>
 					</div>
 				</div>
 
@@ -93,9 +100,10 @@
 					<img src="img/photo_forte.jpg" width="240" height="240" alt="" />
 					
 					<div class="info-price">
-						<span>название шаблона</span>
-						<p>описание</p>
-						<a href="#">цена</a>
+						<span>FORTE</span>
+						<p>Отличный макет
+						для личного блога</p>
+						<a href="#">5000 Р.</a>
 					</div>
 				</div>
 
@@ -103,9 +111,10 @@
 					<img src="img/photo_modern.jpg" width="240" height="240" alt="" />
 					
 					<div class="info-price">
-						<span>название шаблона</span>
-						<p>описание</p>
-						<a href="#">цена</a>
+						<span>Modern Organic THAI</span>
+						<p>Сайт для ресторана
+						быстрого питания</p>
+						<a href="#">12000 Р.</a>
 					</div>
 				</div>
 
@@ -113,9 +122,10 @@
 					<img src="img/photo_avenue.jpg" width="240" height="240" alt="" />
 					
 					<div class="info-price">
-						<span>название шаблона</span>
-						<p>описание</p>
-						<a href="#">цена</a>
+						<span>AVENUE</span>
+						<p>Макет для блога 
+						о путешествиях</p>
+						<a href="#">8000 Р.</a>
 					</div>
 				</div>
 
@@ -123,9 +133,10 @@
 					<img src="img/photo_dovetail.jpg" width="240" height="240" alt="" />
 					
 					<div class="info-price">
-						<span>название шаблона</span>
-						<p>описание</p>
-						<a href="#">цена</a>
+						<span>DOVETAIL</span>
+						<p>Интернет-магазин
+						с галереей товаров</p>
+						<a href="#">14000 Р.</a>
 					</div>
 				</div>
 
@@ -139,8 +150,41 @@
 			<li><a href="#">СЛЕДУЮЩАЯ</a></li>
 		</ul>
 
-		<div class="map-widget"> <!-- заглушка виджет карты -->
-			<img src="img/map.jpg" width="900" height="415" alt="Карта проезда" />
+		<div class="map-widget">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.581613527351!2d30.321602719276925!3d59.9390843949937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462565006533" width="900" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<img src="img/logo_map.png" width="231" height="190" alt="Барбершоп" />
+
+				<div class="map-info">
+					<h2>NЁRDS DESIGN STUDIO</h2>
+
+						<p>191186, Санкт-Петербург,<br>
+							ул. Б. Конюшенная, д. 19/8<br>
+							<br>
+							тел. +7 (812) 275-75-75
+						</p>
+
+					<a class="login" href="/">НАПИШИТЕ НАМ</a>
+				</div>
+				
+			<div class="modal-content">
+				<img class="modal-content-close" src="img/close_btn.png" width="41" height="41">
+
+				<div class="single-field">
+					  <label for="Name">Ваше имя:</label><br>
+					  <input name="Name" type="text" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА"></input>
+				</div>
+				 <div class="single-field">
+					  <label for="Email">Ваш e-mail:</label><br>
+					  <input name="Email" type="text" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА"></input>
+				 </div>
+				<div class="single-field"><br>
+					  <label for="Name">Текст письма:</label>
+					  <textarea name="Name" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
+				</div>
+				
+				<input type="button" value="ОТПРАВИТЬ">
+			</div>
+
 		</div>
 
 		<footer>
@@ -161,6 +205,6 @@
 		</footer>
 		
 	</div>
-
+	<script src="js/popup.js"></script>
   </body>
 </html>
