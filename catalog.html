@@ -48,7 +48,7 @@
 			до <input class="max-price" type="text" value="15 000">
 		   </div>
 
-			<form action="#" method="post">
+			<form action="#" method="post"> <!-- зпменить тег form на div -->
 				<label>СЕТКА:</label><br>
 					<ul>
 						<li><input type="radio" checked ><label>Адаптивная</label></li>
@@ -167,22 +167,24 @@
 				</div>
 				
 			<div class="modal-content">
-				<img class="modal-content-close" src="img/close_btn.png" width="41" height="41">
+				<form class="modal-f">
+					<img class="modal-content-close" src="img/close_btn.png" width="41" height="41">
 
-				<div class="single-field">
-					  <label for="Name">Ваше имя:</label><br>
-					  <input name="Name" type="text" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА"></input>
-				</div>
-				 <div class="single-field">
-					  <label for="Email">Ваш e-mail:</label><br>
-					  <input name="Email" type="text" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА"></input>
-				 </div>
-				<div class="single-field"><br>
-					  <label for="Name">Текст письма:</label>
-					  <textarea name="Name" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
-				</div>
-				
-				<input type="button" value="ОТПРАВИТЬ">
+					<div class="single-field">
+						  <label for="Name">Ваше имя:</label><br>
+						  <input name="Name" type="text" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА"></input>
+					</div>
+					 <div class="single-field">
+						  <label for="Email">Ваш e-mail:</label><br>
+						  <input name="Email" type="text" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА"></input>
+					 </div>
+					<div class="single-field"><br>
+						  <label for="textarea">Текст письма:</label>
+						  <textarea name="textarea" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
+					</div>
+					
+					<input type="submit" value="ОТПРАВИТЬ">
+				</form>
 			</div>
 
 		</div>

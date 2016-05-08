@@ -1,9 +1,12 @@
 var link = document.querySelector(".login");
 var popup = document.querySelector(".modal-content");
 var close = document.querySelector(".modal-content-close");
-var form = document.querySelector("form");
+var form = document.querySelector(".modal-f");
 var login = popup.querySelector("[name=login]");
 var password = popup.querySelector("[name=password]");
+var usname = popup.querySelector("[name=Name]");
+var email = popup.querySelector("[name=Email]");
+var textplace = popup.querySelector("[name=textare]");
 var storage = localStorage.getItem("login");
 
 link.addEventListener("click", function(event) {
@@ -11,12 +14,12 @@ link.addEventListener("click", function(event) {
 	popup.classList.add("modal-content-show");
 	
 	if (storage) {
-		login.value = storage;
-		password.focus();
+		usname.value = storage;
+		email.focus();
 	}
 	
 	else {
-		login.focus();
+		usname.focus();
 	}
 
 });
@@ -24,12 +27,29 @@ link.addEventListener("click", function(event) {
 close.addEventListener("click", function(event) {
 	event.preventDefault();
 	popup.classList.remove("modal-content-show");
+	usname.setAttribute("placeholder", "ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА");
+	email.setAttribute("placeholder", "ДЛЯ ОТПРАВКИ ОТВЕТА");
+	textplace.setAttribute("placeholder", "В СВОБОДНОЙ ФОРМЕ");
 });
 
 form.addEventListener("submit", function(event) {
-	if (!login.value || !password.value) {
+	if (!usname.value || !email.value || !textplace.value) {
 		event.preventDefault();
-		console.log("Нужно ввести логин и пароль");
+		
+		if(!usname.value){
+			usname.classList.add("redbord");
+			usname.setAttribute("placeholder", "ОБЯЗАТЕЛЬНОЕ ПОЛЕ!");
+		
+		}
+		if(!email.value){
+			email.classList.add("redbord");
+			email.setAttribute("placeholder", "ОБЯЗАТЕЛЬНОЕ ПОЛЕ!");
+		}
+		if(!textplace.value){
+			textplace.classList.add("redbord");
+			textplace.setAttribute("placeholder", "ОБЯЗАТЕЛЬНОЕ ПОЛЕ!");
+		}
+		alert("Нужно заполнить все поля");
 }
 });
 

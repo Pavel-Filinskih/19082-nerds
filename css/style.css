@@ -4,7 +4,7 @@ body {
 	font-family: Roboto;
 	color:#000;
 }
-	
+
 h1 {
 	font-size: 40px;
 	line-height: 36px;
@@ -498,6 +498,8 @@ h2 {
 
 .modal-content-show {
 	display: block;
+	animation: formanim 1s;
+	animation-fill-mode:forwards;
 }
 
 .modal-content img {
@@ -582,7 +584,7 @@ h2 {
 	border: 2px solid #56bffb;
 }
 
-.modal-content input[type="button"] {
+.modal-content input[type="submit"] {
 	width: 460px;
 	height: 40px;
 	border-radius: 2px;
@@ -593,13 +595,45 @@ h2 {
 	display: block;
 }
 
-.modal-content input[type="button"]:hover {
+.modal-content input[type="submit"]:hover {
 	background-color: #d6494d;
 }
 
-.modal-content input[type="button"]:active {
+.modal-content input[type="submit"]:active {
 	background-color: #b63538;
 }
+
+@keyframes formanim{
+    0% {
+        opacity: 0;
+    }
+	
+    60% {
+        opacity: 0.5;
+       transform:rotate(360deg);
+    }
+		
+	70%, 90%{
+		opacity:1;
+		transform:translateX(-10px);
+		
+	}
+	
+	80%, 100%{
+		transform:translateX(10px);
+	}
+
+}
+
+@keyframes valid{
+	0%, 60%{opacity:0;} 
+	30%{ opacity:1; }
+	100%{ opacity:1; 
+	background-color:#fb565a;
+	}
+}
+
+.redbord{  animation:valid 1s; }
 
 footer {
 	padding-bottom: 77px;
@@ -767,6 +801,7 @@ footer p span{
 
 .price-controls{
     white-space:nowrap;
+	margin-bottom: 53px;
 }
 
 /* стили слайдера цены */
@@ -778,7 +813,6 @@ footer p span{
 }
 
 .wrapper-forms form {
-	margin-top: 53px;
 }
 
 .wrapper-forms form ul {
