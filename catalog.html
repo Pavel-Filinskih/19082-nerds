@@ -1,212 +1,273 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<head>
+  	<meta charset="utf-8">
+  	<title>HTML Academy: Нёрдс-Каталог</title>
+  	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:500,700,300&amp;subset=latin,cyrillic' type='text/css'>
+  	<link rel="stylesheet" href="css/normalize.css">
+  	<link rel="stylesheet" href="css/style.min.css">
+	</head>
+<body>
 
-  </head>
-  <body>
-
-<div class="background-wrapper">
-    <div class="wrapper-main">
-
-		<header class="header-main">
-			<a href="#"><img src="img/logo.png" width="139" height="56" alt="Барбершоп" /></a>
+	<!-- начало меню шапка -->
+	<header class="wrapper-background">
+		<div class="wrapper-main collapsefix">
+			<a class="logo" href="#">
+				<img src="img/nerds-logo.png" width="139" height="56" alt="Дизайн-студия Nёrds" />
+			</a>
 
 			<nav class="header-main-menu">
 				<ul>
-					<li><a href="#">Студия</a></li>
-					<li><a href="#">Клиенты</a></li>
-					<li><a href="#">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
+					<li> <a href="index.html">Студия</a> </li> 
+					<li> <a href="#">Клиенты</a> </li> 
+					<li class="active-page"> <span>Магазин</span> </li>
+					<li> <a href="#">Контакты</a> </li>
+				</ul> 
 			</nav>
 
 			<div class="header-main-basket">
-				<img src="img/icon-basket.png" width="15" height="15" alt="Корзина" />
-				<a href="#">Корзина</a>
+				<a href="#" class="cart icon-basket">Корзина</a>
 			</div>
-		</header>
-	</div>
-			<h1>Добро пожаловать в <br>магазин готовых макетов</h1>
-</div>
-		
-	<div class="wrapper-main">
-		
-		<div class="wrapper-forms">
-		
-			<div class="range-controls">
-				<div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
-				<div class="toggle min-toggle"></div>
-				<div class="toggle max-toggle"></div>
-			</div>
-
-		   <div class="price-controls">
-			от <input class="min-price" type="text" value="0">
-			до <input class="max-price" type="text" value="15 000">
-		   </div>
-
-			<form action="#" method="post"> <!-- зпменить тег form на div -->
-				<label>СЕТКА:</label><br>
-					<ul>
-						<li><input type="radio" checked ><label>Адаптивная</label></li>
-						<li><input type="radio"><label>Фиксированная</label></li>
-						<li><input type="radio"><label>Резиновая</label></li>
-					</ul>
-				<label>ОСОБЕННОСТИ:</label><br>
-					<ul>
-					<li><input type="checkbox" checked ><label>Слайдер</label></li>
-					<li><input type="checkbox"><label>Блок преимуществ</label></li>
-					<li><input type="checkbox" checked ><label>Новости</label></li>
-					<li><input type="checkbox"><label>Галерея</label></li>
-					<li><input type="checkbox"><label>Корзина</label></li>
-					</ul>
-				<input type="submit" value="Показать">
-			</form>
 		</div>
 		
-		<div class="shop-catalog">
-			<div class="filter-catalog">
-				<p>СОРТИРОВАТЬ: <span>ПО ЦЕНЕ</span>  <span>ПО ТИПУ</span> <span>ПО ФУНКЦИОНАЛУ</span></p>
+		<div class="wrapper-main clearfix">
+			<div class="welcom-text">							
+				<h1>Добро пожаловать в магазин готовых макетов</h1>				  	
 			</div>
+		</div>
+	</header>
+	<!-- конец меню шапка -->
+	
+	<!-- начало блок фильтры и каталог -->
+	<div class="catalog-content">
+		<div class="wrapper-main clearfix">
 			
-			<div class="pictures-catalog">
+			<!-- начало форма выбора вебсайта -->
+			<aside class="catalog-form-filters">
+				<form action="form.php" method="GET">
+					<div class="price-filter">
 
-				<div class="wrap-pict-catalog">
-					<img src="img/photo_aviator.jpg" width="240" height="240" alt="" />
-					
-					<div class="info-price">
-						<span>AVIATOR</span>
-						<p>Одностраничный макет
-						с авторским дизайном</p>
-						<a href="#">8000 Р.</a>
+						<h2>Стоимость:</h2>
+
+						<div class="range-block">
+							<div class="scale">
+								<div class="bar"> </div>
+							</div>
+
+							<div class="toggle min-toggle"> </div>
+							<div class="toggle max-toggle"> </div>
+						</div>
+
+						<div class="price-field">
+							<label class="min-price">
+								от <input type="text" name="min-price" value="0">
+							</label>
+
+							<label class="max-price">
+								до <input type="text" name="max-price" value="15000">
+							</label>						
+						</div>
+					</div>
+
+					<div class="website-types"> 													
+						<fieldset class="net">
+							<legend>Сетка:</legend>
+
+							<input type="radio" id="adaptive" name="website-types" value="adaptive" checked> <label for="adaptive"> Адаптивная </label>
+
+							<input type="radio" id="fixed" name="website-types" value="fixed"> <label for="fixed"> Фиксированная </label>
+
+							<input type="radio" id="fluid" name="website-types" value="fluid"> <label for="fluid"> Резиновая </label>
+						</fieldset>
+
+						<fieldset class="specifics">
+							<legend>Особенности:</legend>
+
+							<input type="checkbox" id="slider-type" name="slider" checked> <label for="slider-type"> Слайдер </label>
+							<input type="checkbox" id="features-block" name="advantages-block"> <label for="features-block"> Блок преимуществ </label>
+
+							<input type="checkbox" id="news" name="news" checked> <label for="news"> Новости </label> 
+							<input type="checkbox" id="gallery-type" name="gallery"> <label for="gallery-type"> Галерея </label>
+
+							<input type="checkbox" id="cart-type" name="cart"> <label for="cart-type"> Корзина	</label>
+						</fieldset>
+					</div>
+
+					<button class="filter-btn" type="submit">Показать</button>
+				</form>
+			</aside>
+			<!-- конец форма выбора вебсайта -->
+
+			<!-- начало фильтры каталога -->
+			<div class="wrapper-catalog">
+				<div class="catalog-header clearfix">
+					<div class="catalog-filters">
+						<span>Сортировать:</span>
+						<ul>
+							<li> <a href="#">По цене</a> </li>
+							<li> <a href="#">По типу</a> </li>
+							<li> <a href="#">По функционалу</a> </li>
+						</ul>
+					</div>
+
+					<div class="catalog-filter-pointer">
+						<a class="pointer-down icon-down-dir" href="#"> </a>
+						<a class="pointer-up icon-up-dir" href="#"> </a>
 					</div>
 				</div>
+				<!-- конец фильтры каталога -->
+				
+				<!-- начало каталог шаблонов -->
+				<div class="catalog-templates">
+					<div class="aviator sample">
+						<div class="aviator-img">
+							<img src="img/aviator.jpg" width="240" height="240" alt="Образец сайта Aviator">
+						</div>
 
-				<div class="wrap-pict-catalog">
-					<img src="img/photo_sunset.jpg" width="240" height="240" alt="" />
+						<div class="aviator-description">
+							<a href="#"> <h3>Aviator</h3> </a>
+							<p>Одностраничный макет с авторским дизайном</p>
+							<a class="btn-price" href="#">8000 р.</a>
+						</div>
+					</div>
 
-					<div class="info-price">
-						<span>Sunset</span>
-						<p>Интернет-магазин
-						 с личным кабинетом</p>
-						<a href="#">10000 Р.</a>
+					<div class="sunset sample">
+						<div class="sunset-img">
+							<img src="img/sunset.jpg" width="240" height="240" alt="Образец сайта Sunset">
+						</div>
+
+						<div class="sunset-description">
+							<a href="#"> <h3>Sunset</h3> </a>
+							<p>Интернет-магазин с личным кабинетом</p>	
+							<a class="btn-price" href="#">10000 р.</a>
+						</div>
+					</div>
+
+					<div class="forte sample">
+						<div class="forte-img">
+							<img src="img/forte.jpg" width="240" height="240" alt="Образец сайта Forte">
+						</div>
+
+						<div class="forte-description">
+							<a href="#"> <h3>Forte</h3> </a>
+							<p>Отличный макет для личного блога</p>
+							<a class="btn-price" href="#">5000 р.</a>
+						</div>
+					</div>
+
+					<div class="modern-organic-thai sample">
+						<div class="modern-organic-thai-img">
+							<img src="img/modern-organic-thai.jpg" width="240" height="240" alt="Образец сайта Modern Organic THAI">
+						</div>
+
+						<div class="modern-organic-thai-description">
+							<a href="#"> <h3>Modern Organic THAI</h3> </a>
+							<p>Сайт для ресторана быстрого питания</p>
+							<a class="btn-price" href="#">12000 р.</a>
+						</div>
+					</div>
+
+					<div class="avenue sample">
+						<div class="avenue-img">
+							<img src="img/avenue.jpg" width="240" height="240" alt="Образец сайта Avenue">
+						</div>
+
+						<div class="avenue-description">
+							<a href="#"> <h3>Avenue</h3> </a>
+							<p>Макет для блога  о путешествиях</p>
+							<a class="btn-price" href="#">8000 р.</a>
+						</div>
+					</div>
+
+					<div class="dovetail sample">
+						<div class="dovetail-img">
+							<img src="img/dovetail.jpg" width="240" height="240" alt="Образец сайта Dovetail">
+						</div>
+
+						<div class="dovetail-description">
+							<a href="#"> <h3>Dovetail</h3> </a>
+							<p>Интернет-магазин с галереей товаров</p>
+							<a class="btn-price" href="#">14000 р.</a>
+						</div>
 					</div>
 				</div>
+				<!-- конец каталог шаблонов -->
 
-				<div class="wrap-pict-catalog">
-					<img src="img/photo_forte.jpg" width="240" height="240" alt="" />
-					
-					<div class="info-price">
-						<span>FORTE</span>
-						<p>Отличный макет
-						для личного блога</p>
-						<a href="#">5000 Р.</a>
-					</div>
+				<div class="pagination">
+					<span class="current">1</span>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a class="next" href="#next">Следующая</a>
 				</div>
-
-				<div class="wrap-pict-catalog">
-					<img src="img/photo_modern.jpg" width="240" height="240" alt="" />
-					
-					<div class="info-price">
-						<span>Modern Organic THAI</span>
-						<p>Сайт для ресторана
-						быстрого питания</p>
-						<a href="#">12000 Р.</a>
-					</div>
-				</div>
-
-				<div class="wrap-pict-catalog">
-					<img src="img/photo_avenue.jpg" width="240" height="240" alt="" />
-					
-					<div class="info-price">
-						<span>AVENUE</span>
-						<p>Макет для блога 
-						о путешествиях</p>
-						<a href="#">8000 Р.</a>
-					</div>
-				</div>
-
-				<div class="wrap-pict-catalog">
-					<img src="img/photo_dovetail.jpg" width="240" height="240" alt="" />
-					
-					<div class="info-price">
-						<span>DOVETAIL</span>
-						<p>Интернет-магазин
-						с галереей товаров</p>
-						<a href="#">14000 Р.</a>
-					</div>
-				</div>
-
 			</div>
 		</div>
-		
-		<ul class="pagination">
-			<li><a href="#">1</a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">СЛЕДУЮЩАЯ</a></li>
-		</ul>
+	</div>
+	<!-- конец фильтры и каталог -->
 
-		<div class="map-widget">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.581613527351!2d30.321602719276925!3d59.9390843949937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462565006533" width="900" height="415" frameborder="0" style="border:0" allowfullscreen></iframe>
-			<img src="img/logo_map.png" width="231" height="190" alt="Барбершоп" />
-
+	<!-- начало блок наше местоположение -->
+	<div class="map-location">
+	
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.581613527351!2d30.321602719276925!3d59.9390843949937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462565006533" width="1200" height="415" style="border:0" allowfullscreen></iframe>
+	
+		<div class="wrapper-main">
 				<div class="map-info">
 					<h2>NЁRDS DESIGN STUDIO</h2>
+					<p>191186, Санкт-Петербург, <br>
+					ул. Б. Конюшенная, д. 19/8</p>
+					<p class="phone-number">тел. +7 (812) 275-75-75</p>
 
-						<p>191186, Санкт-Петербург,<br>
-							ул. Б. Конюшенная, д. 19/8<br>
-							<br>
-							тел. +7 (812) 275-75-75
-						</p>
-
-					<a class="login" href="/">НАПИШИТЕ НАМ</a>
+				<div class="map-mail">
+					<a class="map-mail-to" href="form.html">Напишите нам</a>
 				</div>
-				
-			<div class="modal-content">
-				<form class="modal-f">
-					<img class="modal-content-close" src="img/close_btn.png" width="41" height="41">
+			</div>
+		</div>
+	</div>
+	<!-- конец блок наше местоположение -->
+	
+	<!-- начало футер -->
+	<footer class="footer-main">
+		<div class="wrapper-main clearfix">
 
-					<div class="single-field">
-						  <label for="Name">Ваше имя:</label><br>
-						  <input name="Name" type="text" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА"></input>
-					</div>
-					 <div class="single-field">
-						  <label for="Email">Ваш e-mail:</label><br>
-						  <input name="Email" type="text" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА"></input>
-					 </div>
-					<div class="single-field"><br>
-						  <label for="textarea">Текст письма:</label>
-						  <textarea name="textarea" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
-					</div>
-					
-					<input type="submit" value="ОТПРАВИТЬ">
-				</form>
+			<div class="social-button">
+				<a class="social-btn icon-vk" href="#">ВКонтакте</a>
+				<a class="social-btn icon-facebook" href="#">Facebook</a>
+				<a class="social-btn icon-instagramm" href="#">Instagram</a>
+			</div>  
+
+			<div class="discount">
+				<b>Давайте дружить, это выгодно!</b>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 
 		</div>
+	</footer>
+	<!-- конец футер -->
+	
+	<!-- начало модальное окно форма -->
+	<div class="modal-content">
+		<form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+			<div class="modal-form-user clearfix">
+				<div class="modal-username-field">
+					<label for="username">Ваше имя:</label>
+					<input type="text" id="username" name="username" value="Представьтесь, пожалуйста" required>
+				</div>			
 
-		<footer>
-			<div class="footer-social-buttons">
-				<div class="vk">
-					<img src="img/vk.png" width="25" height="16" alt="Вконтакте" />
-				</div>
-				
-				<div class="fb">
-					<img src="img/fb.png" width="12" height="22" alt="Facebook" />
-				</div>
-				
-				<div class="inst">
-					<img src="img/inst.png" width="21" height="21" alt="Instagramm" />
+				<div class="modal-mail-field">
+					<label for="mail">Ваш e-mail:</label>
+					<input type="text" id="mail" name="mail" value="Для отправки ответа" required>
 				</div>
 			</div>
-			<p>Давайте дружить, это выгодно!<br><span>Скидка 10% для друзей из социальных сетей.</span></p>
-		</footer>
-		
+			
+				<label for="textarea">Текст письма:</label>
+				<textarea name="textarea" id="textarea" required>В свободной форме</textarea>			
+
+			<a class="send-info" href="#">Отправить</a>
+
+			<button class="modal-close" type="button">Закрыть</button>	
+		</form>			
 	</div>
-	<script src="js/popup.js"></script>
-  </body>
+	<!-- конец модальное окно форма -->
+	
+	<script src="js/popup.min.js"></script>
+</body>
 </html>
